@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/*
+    Include main styles
+*/
+/*
+    Include variables
+*/
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1440px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1280px;
+  }
+}
+/*
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px
+
+    @include media-breakpoint-down(breakpoints) {
+        scss coding
+    }
+*/
+:root {
+  /* Скорость быстрой анимации */
+  --speed-animation: 0.3s;
+  --root-body-bg: #F4F7FA;
+  --root-title-clr: #262626;
+  --root-h1-sz: 48px;
+  --root-h1-lh: 55px;
+  --root-h2-sz: 32px;
+  --root-h2-lh: 55px;
+  --root-btn-bg: var(--root-clr);
+  --root-btn-bg-hov: var(--root-clr-2);
+  --root-btn-clr: #fff;
+  --root-btn-clr-hov: #fff;
+  --root-btn-radius: 15px;
+  --root-link-clr: var(--black);
+  --root-link-clr-hov: var(--root-clr);
+  --root-clr: #273895;
+  --root-clr-2: #3B1D8F;
+  --root-clr-3: #4614E8;
+  --root-clr-4: #BCA7FF;
+  --white: #FDFDFD;
+  --black: #000;
+  --gray: #eee;
+  --root-clr-block-title: #FDFDFD;
+}
+@media (max-width: 1439.98px) {
+  :root {
+    --root-h1-sz: 40px;
+  }
+}
+@media (max-width: 1199.98px) {
+  :root {
+    --root-h1-sz: 35px;
+  }
+}
+@media (max-width: 991.98px) {
+  :root {
+    --root-h1-sz: 30px;
+    --root-h1-lh: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  :root {
+    --root-h1-sz: 24px;
+  }
+}
+
+/*
+    Include bootstrap
+*/
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1440px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1280px;
+  }
+}
+/*
+    Include normalize styles
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+    Include global styles
+*/
+* {
+  font-family: Gotham Pro;
+}
+
+body {
+  font-family: Gotham Pro;
+  font-size: 14px;
+  background-color: var(--root-body-bg);
+}
+
+p {
+  line-height: 150%;
+}
+
+a {
+  color: var(--root-link-clr);
+  transition: var(--speed-animation) all;
+}
+a:hover {
+  color: var(--root-link-clr-hov);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--root-title-clr);
+}
+
+h1 {
+  font-size: var(--root-h1-sz);
+  line-height: var(--root-h1-lh);
+}
+
+h2 {
+  font-size: var(--root-h2-sz);
+  line-height: var(--root-h2-lh);
+}
+
+h3 {
+  font-size: var(--root-h3-sz);
+  line-height: var(--root-h3-lh);
+}
+
+h3 {
+  font-size: var(--root-h4-sz);
+  line-height: var(--root-h4-lh);
+}

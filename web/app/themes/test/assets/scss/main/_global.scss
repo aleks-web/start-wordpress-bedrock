@@ -1,0 +1,46 @@
+* {
+    font-family: Gotham Pro;
+}
+
+body {
+    font-family: Gotham Pro;
+    font-size: 14px;
+    background-color: var(--root-body-bg);
+}
+
+p {
+    line-height: 150%;
+}
+
+a {
+    color: var(--root-link-clr);
+    transition: var(--speed-animation) all;
+
+    &:hover {
+        color: var(--root-link-clr-hov);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--root-title-clr);
+}
+
+h1 {
+    font-size: var(--root-h1-sz);
+    line-height: var(--root-h1-lh);
+}
+
+h2 {
+    font-size: var(--root-h2-sz);
+    line-height: var(--root-h2-lh);
+}
+
+h3 {
+    font-size: var(--root-h3-sz);
+    line-height: var(--root-h3-lh);
+}
+
+h3 {
+    font-size: var(--root-h4-sz);
+    line-height: var(--root-h4-lh);
+}

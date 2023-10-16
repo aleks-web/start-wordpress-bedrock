@@ -1,0 +1,88 @@
+@import "bootstrap/mixins";
+
+/*
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px
+
+    @include media-breakpoint-down(breakpoints) {
+        scss coding
+    }
+*/
+
+
+:root {
+    /* Скорость быстрой анимации */
+    --speed-animation: 0.3s;
+
+    --root-body-bg: #F4F7FA;
+
+    // Title main vars
+    --root-title-clr: #262626;
+    // EMD Title main vars
+
+    // Title h1
+    --root-h1-sz: 48px;
+    --root-h1-lh: 55px;
+    // END Title h1
+
+    // Title h2
+    --root-h2-sz: 32px;
+    --root-h2-lh: 55px;
+    // END Title h2
+    
+    // Кнопки
+    --root-btn-bg: var(--root-clr);
+    --root-btn-bg-hov: var(--root-clr-2);
+
+    --root-btn-clr: #fff;
+    --root-btn-clr-hov: #fff;
+
+    --root-btn-radius: 15px;
+    // END Кнопки
+
+    // Ссылки
+    --root-link-clr: var(--black);
+    --root-link-clr-hov: var(--root-clr);
+    // END Ссылки
+
+    
+    // Главные цвета сайта
+    --root-clr: #273895;
+    --root-clr-2: #3B1D8F;
+    --root-clr-3: #4614E8;
+    --root-clr-4: #BCA7FF;
+    // END Главные цвета сайта
+    
+    // Оттенки цветов
+    --white: #FDFDFD;
+    --black: #000;
+    --gray: #eee;
+    // END Оттенки цветов
+    
+    // Прочие главные цвета
+    --root-clr-block-title: #FDFDFD;
+    // END Прочие главные цвета
+
+
+
+    @include media-breakpoint-down(xxl) {
+        --root-h1-sz: 40px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        --root-h1-sz: 35px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        --root-h1-sz: 30px;
+        --root-h1-lh: 40px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        --root-h1-sz: 24px;
+    }
+}
